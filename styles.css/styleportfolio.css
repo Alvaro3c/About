@@ -1,5 +1,18 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+:root {
+    --color1: #fbf5f3;
+    --color2: #e28413;
+    --color3: #000022;
+    --color4: #de3c4b;
+    --color5: #c42847;
+}
+
 * {
-    box-sizing: border-box
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 /* Slideshow container */

@@ -1,0 +1,77 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+
+:root {
+    --color1: #fbf5f3;
+    --color2: #e28413;
+    --color3: #000022;
+    --color4: #de3c4b;
+    --color5: #c42847;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* HEADER STARTS */
+
+.container {
+    width: 100%;
+    height: 50px;
+    background-color: var(--color3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container div a {
+    color: var(--color2);
+    font-size: 20px;
+}
+
+.title {
+    padding: 20px 0px 10px 10px;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav a {
+    color: var(--color2);
+    padding: 20px 0px;
+    text-decoration: none;
+}
+
+
+#nav a:hover {
+    color: #c42847;
+}
+
+/* HEADER ENDS */
+
+/*MAIN STARTS*/
+/*MAIN ENDS*/
+
+/*FOOTER STARTS*/
+.bottom {
+    width: 100%;
+    height: 60px;
+    color: var(--color1);
+    background-color: var(--color4);
+    text-align: center;
+}
+
+.bottom p {
+    padding: 10px;
+}
+
+/*FOOTER ENDS*/
+
+/*MEDIA QUERIES*/
