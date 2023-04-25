@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <link rel="stylesheet" href="../styles.css/stylecontact.css">
 </head>
 
 <body>
@@ -15,13 +16,11 @@
                 <div>
                     <a href="alvaro.cuallado.g@gmail.com">
                         <i class="fa-solid fa-envelope"></i>
-
                     </a>
                 </div>
                 <div>
                     <a href="tel:915556677">
                         <i class="fa-solid fa-phone-flip"></i>
-
                     </a>
                 </div>
                 <div>
@@ -30,43 +29,46 @@
                     </a>
                 </div>
             </div>
-            <h2>Alvaro Cuallado</h2>
-            <h2>Photography</h2>
+            <div class="title">
+                <h2>Alvaro Cuallado</h2>
+                <h2>Photography</h2>
+            </div>
             <div id="nav">
-                <a href="">Bio</a>
-                <a href="">Portfolio</a>
-                <a href="">Contact</a>
+                <a href="../index.html">Home</a>
+                <a href="../pages/bio.html">Bio</a>
+                <a href="../pages/portfolio.html">Portfolio</a>
             </div>
 
 
     </header>
     <main>
-        <img src="" alt="">
-        <h2>Book now</h2>
-        <form action="">
-            <p>Name <input type="text" minlength="2" maxlength="20"></p>
-            <p>Email <input type="email"></p>
-            <p>Booking date <input type="date"></p>
-            <p>type of house
-                <select name="" id="">
-                    <option value=""></option>
-                    <option value="">Apartment</option>
-                    <option value="">Flat</option>
-                    <option value="">Mansion</option>
-                    <option value="">Villa</option>
-                </select>
-            <p>Number of photos desired <input type="radio" name="nOfPhotos">10 / <input type="radio"
-                    name="nOfPhotos">25 / <input type="radio" name="nOfPhotos">50 <input type="radio"
-                    name="nOfPhotos">75+
-            </p>
-            <p>How do you want to recieve the photos? <input type="checkbox">Email <input type="checkbox">Printed
-            </p>
-            <p>Message <textarea name="description" rows="4" cols="50">
+        <div class="main-container">
+            <h2>Book now</h2>
+            <form action="">
+                <p>Name <input type="text" minlength="2" maxlength="20"></p>
+                <p>Email <input type="email"></p>
+                <p>Booking date <input type="date"></p>
+                <p>type of house
+                    <select name="" id="" class="select">
+                        <option value=""></option>
+                        <option value="apartment">Apartment</option>
+                        <option value="flat">Flat</option>
+                        <option value="mainsion">Mansion</option>
+                        <option value="villa">Villa</option>
+                    </select>
+                <p>Number of photos desired <input type="radio" name="nOfPhotos">10 / <input type="radio"
+                        name="nOfPhotos">25 / <input type="radio" name="nOfPhotos">50 <input type="radio"
+                        name="nOfPhotos">75+
+                </p>
+                <p>How do you want to recieve the photos? <input type="checkbox">Email <input type="checkbox">Printed
+                </p>
+                <p>Message <textarea name="description" rows="4" cols="50">
 
                 </textarea></p>
 
-            <button type="submit" value="send">Send</button>
-        </form>
+                <button type="submit" value="send">Send</button>
+            </form>
+        </div>
     </main>
     <footer>
         <footer>

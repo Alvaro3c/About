@@ -15,96 +15,128 @@
     box-sizing: border-box;
 }
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+
+:root {
+    --color1: #fbf5f3;
+    --color2: #e28413;
+    --color3: #000000;
+    --color4: #de3c4b;
+    --color5: #c42847;
+    --font: verdana;
+    --spacebetweentitles: 20px;
 }
 
-/* Hide the images by default */
-.mySlides {
-    display: none;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+body {
+    background-color: var(--color1);
+    font-family: var(--font);
 }
 
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
+img {
+    padding: 30px;
     width: 100%;
+}
+
+a {
+    color: var(--color2);
+    padding: 20px 0px;
+    text-decoration: none;
+}
+
+
+
+/* HEADER STARTS */
+
+.container {
+    width: 100%;
+    height: 50px;
+    background-color: var(--color3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container div a {
+    color: var(--color2);
+    font-size: 20px;
+}
+
+.title {
+    padding: 20px 0px 10px 10px;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#nav a:hover {
+    color: #c42847;
+}
+
+/* HEADER ENDS */
+
+/*MAIN STARTS*/
+
+.portfolio h3 {
     text-align: center;
+    padding: 20px;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+/*MAIN ENDS*/
+
+/*FOOTER STARTS*/
+.bottom {
+    width: 100%;
+    height: 60px;
+    color: var(--color1);
+    background-color: var(--color4);
+    text-align: center;
+
+
 }
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+.bottom p {
+    padding: 10px;
 }
 
-.active,
-.dot:hover {
-    background-color: #717171;
-}
+/*FOOTER ENDS*/
 
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
+/*MEDIA QUERIES*/
 
-@keyframes fade {
-    from {
-        opacity: .4
+@media (min-width: 1024px) {
+
+    .bottom {
+        position: relative;
+        bottom: 0;
     }
 
-    to {
-        opacity: 1
+    img {
+        width: 600px;
+        height: auto;
+
     }
+
+    #nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .portfolio h3 {
+        padding: 50px;
+    }
+
 }

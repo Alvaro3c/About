@@ -1,7 +1,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
-
 :root {
     --color1: #fbf5f3;
     --color2: #e28413;
@@ -14,6 +13,42 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+
+:root {
+    --color1: #fbf5f3;
+    --color2: #e28413;
+    --color3: #000000;
+    --color4: #de3c4b;
+    --color5: #c42847;
+    --font: verdana;
+    --spacebetweentitles: 20px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: var(--font);
+}
+
+img {
+    padding: 30px;
+    width: 100%;
+}
+
+a {
+    color: var(--color2);
+    padding: 20px 0px;
+    text-decoration: none;
 }
 
 /* HEADER STARTS */
@@ -43,13 +78,6 @@
     align-items: center;
 }
 
-#nav a {
-    color: var(--color2);
-    padding: 20px 0px;
-    text-decoration: none;
-}
-
-
 #nav a:hover {
     color: #c42847;
 }
@@ -57,6 +85,64 @@
 /* HEADER ENDS */
 
 /*MAIN STARTS*/
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.main-container form {
+    color: #b3690f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container form p {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container form button {
+    background-color: var(--color2);
+    border-radius: 20px;
+    font-size: 1em;
+    border: none;
+    padding: 10px;
+}
+
+input,
+select,
+textarea {
+    margin-top: 5px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f6e3cd;
+    border: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: #f9d4a9;
+}
+
+input[type="radio"] {
+    position: relative;
+    top: 20px;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    top: 25px;
+}
+
 /*MAIN ENDS*/
 
 /*FOOTER STARTS*/
@@ -66,6 +152,8 @@
     color: var(--color1);
     background-color: var(--color4);
     text-align: center;
+    position: relative;
+    bottom: 0;
 }
 
 .bottom p {
@@ -75,3 +163,22 @@
 /*FOOTER ENDS*/
 
 /*MEDIA QUERIES*/
+
+@media (min-width: 1024px) {
+
+    .bottom {
+        position: relative;
+        bottom: 0;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    form {
+        width: 700px;
+    }
+}
