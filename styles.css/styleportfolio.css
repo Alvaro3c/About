@@ -51,8 +51,6 @@ a {
     text-decoration: none;
 }
 
-
-
 /* HEADER STARTS */
 
 .container {
@@ -73,15 +71,16 @@ a {
     padding: 20px 0px 10px 10px;
 }
 
+.title h2 {
+    font-size: 2em;
+}
+
 #nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-
-
 
 #nav a:hover {
     color: #c42847;
